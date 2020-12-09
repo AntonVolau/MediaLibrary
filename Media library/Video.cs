@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Media_library
+namespace MediaLibrary
 {
     public class Video : File
     {
