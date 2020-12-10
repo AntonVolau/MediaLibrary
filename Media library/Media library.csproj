@@ -6,4 +6,8 @@
     <RootNamespace>Media_library</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Implementation\Classes\" />
+  </ItemGroup>
+
 </Project>
