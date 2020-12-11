@@ -28,7 +28,7 @@ namespace MediaLibrary
         /// <summary>
         /// Method to sort playlist
         /// </summary>
-        void IPlaylist.Sort()
+        public void Sort()
         {
             // код для сортировки плэйлиста.
         }
@@ -36,7 +36,7 @@ namespace MediaLibrary
         /// <summary>
         /// Method for adding a file in playlist
         /// </summary>
-        void IPlaylist.Add(File file)
+        public void Add(IFile mediaFile1)
         {
             // код для добавления файла в существующий плэйлист.
         }
@@ -44,7 +44,7 @@ namespace MediaLibrary
         /// <summary>
         /// Method for removing file from playlist
         /// </summary>
-        void IPlaylist.Remove(File file)
+        public void Remove(IFile file)
         {
             // код для удаления файла из существующего плэйлиста.
         }
@@ -52,7 +52,7 @@ namespace MediaLibrary
         /// <summary>
         /// Method to search for files
         /// </summary>
-        File[] IPlaylist.Search(string nameToSearch)
+        public File[] Search(string nameToSearch)
         {
             throw new NotImplementedException();
             // код для поиска файлов.

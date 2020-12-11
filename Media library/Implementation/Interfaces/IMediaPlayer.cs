@@ -9,11 +9,11 @@ namespace MediaLibrary
         /// <summary>
         /// Method to play one file
         /// </summary>
-        void Play(File file);
+        void Play(IFile file);
 
         /// <summary>
         /// Mthod to play a playlist
         /// </summary>
-        void Play(Playlist playlist);
+        void Play(IPlaylist playlist);
     }
 }

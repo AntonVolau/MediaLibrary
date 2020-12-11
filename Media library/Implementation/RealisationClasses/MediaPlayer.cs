@@ -6,12 +6,12 @@ namespace MediaLibrary
 {
     public class MediaPlayer : IMediaPlayer
     {
-        void IMediaPlayer.Play(File file)
+        public void Play(IFile file)
         {
             // код для воспроизведения файла.
         }
 
-        void IMediaPlayer.Play(Playlist playlist)
+        public void Play(IPlaylist playlist)
         {
             // код для воспроизведения плэйлиста.
         }

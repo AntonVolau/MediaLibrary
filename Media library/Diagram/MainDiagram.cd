@@ -4,31 +4,31 @@
     <Position X="10.26" Y="3.349" Height="0.604" Width="1.419" />
   </Comment>
   <Class Name="MediaLibrary.Music">
-    <Position X="1" Y="5.25" Width="2.25" />
+    <Position X="1" Y="6" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAAAAAIAAABAAIAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Implementation\Classes\Music.cs</FileName>
+      <HashCode>AIAAAAAABAAAAAAAAAIAAABAAIAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Implementation\MediaFileTypes\Music.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MediaLibrary.Video">
     <Position X="1" Y="3.25" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAABAAAAAAAAAAAAEBAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Implementation\Classes\Video.cs</FileName>
+      <HashCode>AIAAAgAABAAAAAAAAAAAAEBAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Implementation\MediaFileTypes\Video.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MediaLibrary.Photo">
-    <Position X="1" Y="7.25" Width="2.25" />
+    <Position X="1" Y="8.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Implementation\Classes\Photo.cs</FileName>
+      <HashCode>AIAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Implementation\MediaFileTypes\Photo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MediaLibrary.MediaPlayer">
     <Position X="9.5" Y="5.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Implementation\Classes\MediaPlayer.cs</FileName>
+      <FileName>Implementation\RealisationClasses\MediaPlayer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -36,15 +36,15 @@
     <Position X="6.25" Y="5.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAACAAAAABAAgAAAAAAAAAQAAQCAAAAAAAAQAAAAAIA=</HashCode>
-      <FileName>Implementation\Classes\Playlist.cs</FileName>
+      <FileName>Implementation\RealisationClasses\Playlist.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaLibrary.File">
     <Position X="3.75" Y="5.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAIAAAQAAAAABAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Implementation\Classes\File.cs</FileName>
+      <HashCode>AIAAAAAAAAAAgAAAAAIAAAQAAAAABAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Implementation\BaseClassForMediaFiles\File.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

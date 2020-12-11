@@ -11,8 +11,8 @@ namespace MediaLibrary
         int Size { get; set; }
         public System.Collections.Generic.List<File> Files { get; set; }
         void Sort();
-        void Add(File file);
-        void Remove(File file);
+        void Add(IFile file);
+        void Remove(IFile file);
         File[] Search(string nameToSearch);
     }
 }
