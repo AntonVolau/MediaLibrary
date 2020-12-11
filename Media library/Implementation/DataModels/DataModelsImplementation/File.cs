@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediaLibrary.Implementation.DataModels.Enums;
 
-namespace MediaLibrary
+namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
 {
     public abstract class File : IFile
     {
@@ -25,8 +26,6 @@ namespace MediaLibrary
         /// <summary>
         /// Type of a file
         /// </summary>
-        public virtual string Type { get; set; }
-
-        public abstract void Accept();
+        public virtual MediaFileTypes Type { get; set; } 
     }
 }

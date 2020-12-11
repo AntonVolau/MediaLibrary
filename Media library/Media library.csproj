@@ -4,11 +4,24 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Media_library</RootNamespace>
+    <StartupObject>MediaLibrary.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementation\Classes\" />
-    <Folder Include="Main\ProgramInterface\" />
+    <Compile Remove="Implementation\Classes\**" />
+    <Compile Remove="Main\ProgramInterface\**" />
+    <EmbeddedResource Remove="Implementation\Classes\**" />
+    <EmbeddedResource Remove="Main\ProgramInterface\**" />
+    <None Remove="Implementation\Classes\**" />
+    <None Remove="Main\ProgramInterface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implementation\BaseClassForMediaFiles\" />
+    <Folder Include="Implementation\Interfaces\" />
+    <Folder Include="Implementation\MediaFileTypes\" />
+    <Folder Include="Implementation\RealisationClasses\" />
+    <Folder Include="Main\ProgramClass\" />
   </ItemGroup>
 
 </Project>

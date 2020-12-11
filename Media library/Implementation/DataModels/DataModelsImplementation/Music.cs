@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediaLibrary.Implementation.DataModels.Enums;
 
-namespace MediaLibrary
+namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
 {
     public sealed class Music : File
     {
@@ -26,15 +27,10 @@ namespace MediaLibrary
         /// Genre of a song
         /// </summary>
         public string Genre { get; set; }
-        public override string Type
+        public override MediaFileTypes Type// переопределение типа файла
         {
-            get => base.Type = "mp3";
+            get => base.Type = MediaFileTypes.mp3;
             set => base.Type = value;
-        }
-
-        public override void Accept()
-        {
-            // код для принятия медиафайлов типа музыки.
         }
     }
 }

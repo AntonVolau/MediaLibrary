@@ -4,48 +4,58 @@
     <Position X="10.26" Y="3.349" Height="0.604" Width="1.419" />
   </Comment>
   <Class Name="MediaLibrary.Music">
-    <Position X="1" Y="6" Width="2.25" />
+    <Position X="1" Y="5.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAABAAAAAAAAAIAAABAAIAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAIAAABAAIAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Implementation\MediaFileTypes\Music.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MediaLibrary.Video">
-    <Position X="1" Y="3.25" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AIAAAgAABAAAAAAAAAAAAEBAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Implementation\MediaFileTypes\Video.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="MediaLibrary.Photo">
-    <Position X="1" Y="8.75" Width="2.25" />
+    <Position X="1" Y="8.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Implementation\MediaFileTypes\Photo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MediaLibrary.MediaPlayer">
-    <Position X="9.5" Y="5.5" Width="2" />
+  <Class Name="MediaLibrary.Implementation.Players.PlayerSubtypes.VideoPlayer">
+    <Position X="11.25" Y="7.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Implementation\RealisationClasses\MediaPlayer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\Players\PlayerSubtypes\VideoPlayer.cs</FileName>
+      <NewMemberFileName>Implementation\Players\PlayerSubtypes\PhotoPlayer.cs</NewMemberFileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="MediaLibrary.Playlist">
-    <Position X="6.25" Y="5.5" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAABAAgAAAAAAAAAQAAQCAAAAAAAAQAAAAAIA=</HashCode>
-      <FileName>Implementation\RealisationClasses\Playlist.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="1.033" />
   </Class>
   <Class Name="MediaLibrary.File">
-    <Position X="3.75" Y="5.5" Width="2.25" />
+    <Position X="3.75" Y="5.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAgAAAAAIAAAQAAAAABAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAAAAgAAAAAIAAAQAAAAABAAAAQAAAAAAAAA=</HashCode>
       <FileName>Implementation\BaseClassForMediaFiles\File.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Playlist" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MediaLibrary.Playlist&lt;File&gt;">
+    <Position X="7.25" Y="5.75" Width="3" />
+    <AssociationLine Name="MediaPlayer" Type="MediaLibrary.MediaPlayer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="6.625" />
+        <Point X="12.062" Y="6.625" />
+        <Point X="12.062" Y="7.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.185" Y="0.1" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAICQAAAAAAAgAAAAACQBAQAAAAAAAAAAAAEAAAgAAA=</HashCode>
+      <FileName>Implementation\RealisationClasses\Playlist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MediaPlayer" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />

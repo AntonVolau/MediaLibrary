@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediaLibrary.Implementation.DataModels.Enums;
 
-namespace MediaLibrary
+namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
 {
     public sealed class Photo : File
     {
@@ -15,15 +16,10 @@ namespace MediaLibrary
         /// Resolution parameter
         /// </summary>
         public int Width { get; set; }
-        public override string Type
+        public override MediaFileTypes Type // переопределение типа файла
         {
-            get => base.Type = "jpg";
+            get => base.Type = MediaFileTypes.jpeg;
             set => base.Type = value;
-        }
-
-        public override void Accept()
-        {
-            // код для принятия медиафайлов типа фото.
         }
     }
 }
