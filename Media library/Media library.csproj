@@ -8,20 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Implementation\BaseClassForMediaFiles\**" />
     <Compile Remove="Implementation\Classes\**" />
-    <Compile Remove="Main\ProgramInterface\**" />
+    <Compile Remove="Implementation\Interfaces\**" />
+    <Compile Remove="Implementation\MediaFileTypes\**" />
+    <Compile Remove="Implementation\RealisationClasses\**" />
+    <Compile Remove="Main\**" />
+    <EmbeddedResource Remove="Implementation\BaseClassForMediaFiles\**" />
     <EmbeddedResource Remove="Implementation\Classes\**" />
-    <EmbeddedResource Remove="Main\ProgramInterface\**" />
+    <EmbeddedResource Remove="Implementation\Interfaces\**" />
+    <EmbeddedResource Remove="Implementation\MediaFileTypes\**" />
+    <EmbeddedResource Remove="Implementation\RealisationClasses\**" />
+    <EmbeddedResource Remove="Main\**" />
+    <None Remove="Implementation\BaseClassForMediaFiles\**" />
     <None Remove="Implementation\Classes\**" />
-    <None Remove="Main\ProgramInterface\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Implementation\BaseClassForMediaFiles\" />
-    <Folder Include="Implementation\Interfaces\" />
-    <Folder Include="Implementation\MediaFileTypes\" />
-    <Folder Include="Implementation\RealisationClasses\" />
-    <Folder Include="Main\ProgramClass\" />
+    <None Remove="Implementation\Interfaces\**" />
+    <None Remove="Implementation\MediaFileTypes\**" />
+    <None Remove="Implementation\RealisationClasses\**" />
+    <None Remove="Main\**" />
   </ItemGroup>
 
 </Project>

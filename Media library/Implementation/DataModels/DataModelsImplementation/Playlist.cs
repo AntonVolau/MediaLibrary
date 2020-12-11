@@ -7,11 +7,11 @@ namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
     public class Playlist<File> : IPlaylist<File>
     {
         /// <summary>
-        /// Id of a list
+        /// Id of list
         /// </summary>
         public Guid Id { get; set; }
         /// <summary>
-        /// Name of a list
+        /// Name of list
         /// </summary>
         public string Name { get; set; }
 
@@ -29,21 +29,27 @@ namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
         }
 
         /// <summary>
-        /// Method for adding a file in playlist
+        /// Method to add file in playlist
         /// </summary>
+        /// <param name="file"></param>
         public void Add(File file)
         {
             // код для добавления файла в существующий плэйлист.
         }
 
         /// <summary>
-        /// Method for removing file from playlist
+        /// Method to remove file from playlist
         /// </summary>
+        /// <param name="file"></param>
         public void Remove(File file)
         {
             // код для удаления файла из существующего плэйлиста.
         }
-
+        /// <summary>
+        /// Method to pick sertain file based on position
+        /// </summary>
+        /// <param name="filePosition"></param>
+        /// <returns></returns>
         public File GetFile(int filePosition)
         {
             throw new NotImplementedException();
@@ -53,6 +59,8 @@ namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
         /// <summary>
         /// Method to search for files
         /// </summary>
+        /// <param name="nameToSearch"></param>
+        /// <returns></returns>
         public List<File> Search(string nameToSearch)
         {
             throw new NotImplementedException();

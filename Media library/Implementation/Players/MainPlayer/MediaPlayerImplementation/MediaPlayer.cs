@@ -7,53 +7,23 @@ namespace MediaLibrary.Implementation.Players.MainPlayer.MediaPlayerImplementati
 {
     public class MediaPlayer : IMediaPlayer
     {
+
+        /// <summary>
+        /// method for playback of single file
+        /// </summary>
+        /// <param name="file"></param>
         public void Play(File file)
         {
             // код для воспроизведения файла.
         }
 
+        /// <summary>
+        /// method for playback of playlist
+        /// </summary>
+        /// <param name="playlist"></param>
         public void Play(Playlist<File> playlist)
         {
             // код для воспроизведения плэйлиста.
-        }
-    }
-
-    public class PhotoPlayer : IMediaPlayer
-    {
-        public void Play(File file)
-        {
-            // код для воспроизведения файла фото.
-        }
-
-        public void Play(Playlist<File> playlist)
-        {
-            // код для воспроизведения плэйлиста фотографий.
-        }
-    }
-
-    public class VideoPlayer : IMediaPlayer
-    {
-        public void Play(File file)
-        {
-            // код для воспроизведения файла видео.
-        }
-
-        public void Play(Playlist<File> playlist)
-        {
-            // код для воспроизведения плэйлиста видео.
-        }
-    }
-
-    public class MusicPlayer : IMediaPlayer
-    {
-        public void Play(File file)
-        {
-            // код для воспроизведения файла музыки.
-        }
-
-        public void Play(Playlist<File> playlist)
-        {
-            // код для воспроизведения плэйлиста музыки.
         }
     }
 }

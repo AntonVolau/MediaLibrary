@@ -17,33 +17,30 @@ namespace MediaLibrary
 
             File mediaFile1 = new Photo
             {
-                // инициализация фото
+                // инициализация файла фото
             };
 
             File mediaFile2 = new Music
             {
-                // инициализация музыки
+                // инициализация файла музыки
             };
 
             File mediaFile3 = new Video
             {
-                // инициализация видео
+                // инициализация файла видео
             };
 
-            // List<File> fileList = new List<File>();
-            // fileList.Add(new Photo());
-
             // Photo
-            playlist.Add(mediaFile1); // добавление файла фото в плэйлист
-            playlist.Add(new Photo()); // добавление файла фото в плэйлист
+            playlist.Add(mediaFile1); // добавление инициализированного файла фото в плэйлист
+            playlist.Add(new Photo()); // добавление файла фото в плэйлист с инициализацией в аргументе
 
             // Music
-            playlist.Add(mediaFile2); // добавление файла музыки в плэйлист
-            playlist.Add(new Music()); // добавление файла музыки в плэйлист
+            playlist.Add(mediaFile2); // добавление инициализированного файла музыки в плэйлист
+            playlist.Add(new Music()); // добавление файла музыки в плэйлист с инициализацией в аргументе
 
             // Videos
-            playlist.Add(mediaFile3); // добавление файла видео в плэйлист
-            playlist.Add(new Video()); // добавление файла видео в плэйлист
+            playlist.Add(mediaFile3); // добавление инициализированного файла видео в плэйлист
+            playlist.Add(new Video()); // добавление файла видео в плэйлист с инициализацией в аргументе
 
             var player = PlayerFactory.Create(playlist.GetFile(0)); // создание необходимого типа плеера в зависимости от типа файла
 

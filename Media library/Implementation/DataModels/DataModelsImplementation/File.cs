@@ -7,14 +7,17 @@ namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
 {
     public abstract class File : IFile
     {
+        /// <summary>
+        /// ID of file 
+        /// </summary>
         public Guid Guid { get; set; }
         /// <summary>
-        /// Name of a file
+        /// Name of file
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Size of a file
+        /// Size of file
         /// </summary>
         public decimal Size { get; set; }
 
@@ -24,8 +27,8 @@ namespace MediaLibrary.Implementation.DataModels.DataModelsImplementation
         public string Location { get; set; }
 
         /// <summary>
-        /// Type of a file
+        /// Type of file
         /// </summary>
-        public virtual MediaFileTypes Type { get; set; } 
+        public virtual MediaFileTypes Type { get; set; }
     }
 }
