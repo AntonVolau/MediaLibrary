@@ -29,6 +29,13 @@
   </Class>
   <Class Name="MediaLibrary.Implementation.DataModels.DataModelsImplementation.Music">
     <Position X="0.5" Y="0.5" Width="2.5" />
+    <InheritanceLine Type="MediaLibrary.Implementation.DataModels.DataModelsImplementation.File" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3.25" />
+        <Point X="5" Y="1.375" />
+        <Point X="3" Y="1.375" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAIAAABAAIAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Implementation\DataModels\DataModelsImplementation\Music.cs</FileName>
@@ -79,7 +86,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaLibrary.Program">
-    <Position X="5.25" Y="0.75" Width="1.5" />
+    <Position X="6" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>

@@ -7,7 +7,6 @@ namespace MediaLibrary.Implementation.Players.MainPlayer.MediaPlayerImplementati
 {
     public class MediaPlayer : IMediaPlayer
     {
-
         /// <summary>
         /// method for playback of single file
         /// </summary>

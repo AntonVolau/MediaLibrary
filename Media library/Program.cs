@@ -9,11 +9,7 @@ namespace MediaLibrary
     {
         private static void Main()
         {
-            
-            Playlist<File> playlist = new Playlist<File>
-            {
-                // инициализация плэйлиста
-            };
+            Playlist<File> playlist = new Playlist<File>();
 
             File mediaFile1 = new Photo
             {
@@ -42,9 +38,15 @@ namespace MediaLibrary
             playlist.Add(mediaFile3); // добавление инициализированного файла видео в плэйлист
             playlist.Add(new Video()); // добавление файла видео в плэйлист с инициализацией в аргументе
 
-            var player = PlayerFactory.Create(playlist.GetFile(0)); // создание необходимого типа плеера в зависимости от типа файла
+            for (int i = 0; i < playlist.Size; i++)
+            {
+                var player = PlayerFactory.Create(playlist.GetFile(i)); // создание необходимого типа плеера в зависимости от типа файла в плэйлисте
+                player.Play(playlist); // проигрывние плэйлиста
+            }
 
-            player.Play(playlist); // проигрывние плэйлиста
+            var player1 = PlayerFactory.Create(playlist.GetFile(2)); // создание необходимого типа плеера в зависимости от типа файла
+
+            player1.Play(mediaFile2); // проигрывние файла
         }
     }
 }
